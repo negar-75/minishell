@@ -3,6 +3,6 @@
 
 
 
-void free_list (char **list);
 
+void free_list (char **list);
 #endif

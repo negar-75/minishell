@@ -26,8 +26,11 @@ int main(int argc, char **argv, char **envp)
         i++;
     }
 
-    
-    free_list(minishell.path);
-    free_list(minishell.env);
+    printf(" pwd : %s\n", minishell.pwd);
+    printf(" oldPWD : %s\n", minishell.oldpwd);
+    printf(" USER : %s\n", minishell.user);
+    printf(" NAME : %s\n", minishell.name);
+    printf(" HOME : %s\n", minishell.home);
+    free_minishell(&minishell);
     return 0;
 }
